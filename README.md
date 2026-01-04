@@ -40,7 +40,6 @@ L’interface utilisateur est intuitive et réactive, permettant aux patients de
 
 
 <img width="1344" height="642" alt="add-patient" src="https://github.com/user-attachments/assets/896605eb-283f-4301-9528-4cffd7c8e003" />
-![new-bpmn](https://github.com/user-attachments/assets/cc058177-3f40-471b-af64-36ab43721f37)
 <img width="1349" height="642" alt="AddPatientSuccess" src="https://github.com/user-attachments/assets/c9626397-b089-48bb-b4c1-f5b0560faa57" />
 <img width="673" height="337" alt="Capture d&#39;écran 2026-01-04 171147" src="https://github.com/user-attachments/assets/5e463d78-dd82-4ba9-8f08-5c37a74acb82" />
 <img width="1341" height="660" alt="SelecterPatient" src="https://github.com/user-attachments/assets/7068326a-d1b9-41c4-aca2-67dd2479af36" />
