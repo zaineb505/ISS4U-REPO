@@ -1,0 +1,29 @@
+<div class="nav-items">
+    <div class="nav-item">
+        <h1><span>ISS4U</span></h1>
+    </div>
+    <div class="nav-item" (click)="goToDashboard()">
+        <fa-icon [icon]="faDashboard"></fa-icon>
+        <span>Dashboard</span>
+    </div>
+    <div class="nav-item" (click)="goToUserProfile()">
+        <fa-icon [icon]="faUser"></fa-icon>
+        <span>User Profile</span>
+    </div>
+    <div class="nav-item" (click)="goToCalendar()">
+        <fa-icon [icon]="faCalendar"></fa-icon>
+        <span>Calendar</span>
+    </div>
+    <div class="nav-item" (click)="goToPatients()">
+        <fa-icon [icon]="faPatient"></fa-icon>
+        <span>patient</span>
+    </div>
+    <div class="nav-item" (click)="goToSettings()">
+        <fa-icon [icon]="faContactBook"></fa-icon>
+        <span>Settings</span>
+    </div>
+    <div class="nav-item" (click)="logout()">
+        <fa-icon [icon]="faRightLeft"></fa-icon>
+        <span>Logout</span>
+    </div>
+</div>

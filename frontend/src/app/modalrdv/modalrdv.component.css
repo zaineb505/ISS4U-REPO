@@ -1,0 +1,93 @@
+.form-fields {
+    display: grid;
+    grid-gap: 16px;
+}
+
+.input {
+    width: '20rem'
+}
+
+::ng-deep.app-modalrdv {
+    width: 500px;
+    height: 600px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+::ng-deep .p-tabview .p-tabview-nav li.p-disabled .p-tabview-nav-link {
+    opacity: 0.5;
+    /* Opacité réduite pour les onglets inactifs */
+    cursor: not-allowed;
+}
+
+
+/* Styles pour les onglets actifs */
+
+.p-tabview .p-tabview-nav li:not(.p-disabled).p-tabview-selected .p-tabview-nav-link {
+    background-color: #1976d2;
+    /* Couleur de fond pour les onglets actifs */
+    color: #ffffff;
+    /* Couleur du texte pour les onglets actifs */
+}
+
+::ng-deep .ui-dialog .ui-dialog-content {
+    min-height: 300px;
+    /* Ajustez la hauteur selon vos besoins */
+    min-width: 400px;
+}
+
+::ng-deep.custom-dialog-container .mdc-dialog__surface {
+    width: 500px;
+    /* Remplacez la valeur par la taille souhaitée */
+}
+
+
+/*
+::ng-deep.custom-dialog-container {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    width: 500px;
+    height: 480px;
+     Autres styles personnalisés
+}*/
+
+::ng-deep.custom-dialog-container .mat-form-field .input {
+    background-color: #fff;
+}
+
+
+/*************/
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #b9dbf7f8;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #b9dbf7f8;
+}
+
+.table th:not(:last-child),
+.table td:not(:last-child) {
+    border-right: 1px solid #ccc;
+}

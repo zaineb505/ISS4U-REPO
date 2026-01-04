@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Patient</h1>
+<form [formGroup]="ReactiveformUpdate" (ngSubmit)="updatePatient()">
+<div mat-dialog-content>
+<mat-form-field>
+  <mat-label>ID</mat-label>
+  <input placeholder="ID" matInput formControlName="p_kyPatient" required>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Adress</mat-label>
+  <input placeholder="Adress" matInput  formControlName="p_Adress"required>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>First Name</mat-label>
+  <input placeholder="First Name" matInput formControlName="p_FirstName"  required>
+ </mat-form-field>
+<mat-form-field>
+  <mat-label>Name</mat-label>
+  <input placeholder="Name" matInput formControlName="p_Name"  required>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Phone Number</mat-label>
+  <input   placeholder="Phone Number" matInput formControlName="p_Tel" required>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Birthday Date</mat-label>
+  <input  type ="date" placeholder="Birthday Date" matInput formControlName="p_birthDate"  required>
+</mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button  color="warn" mat-dialog-close>Cancel</button>
+  <button type="submit"   mat-raised-button color="primary" cdkFocusInitial>save</button>
+</div>
+</form>

@@ -1,0 +1,23 @@
+.container {
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1055px;
+    margin: auto;
+    height: 400px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.mt-5 {
+    height: 400px;
+}
+
+.d-inline1 mx-2 .btn {
+    background-color: #f44336;
+}
+
+.d-inline .btn {
+    background-color: #3f51b5;
+    color: #ffff;
+}

@@ -1,0 +1,16 @@
+<div class='demo-app'>
+    <div class='demo-app-sidebar'>
+        <div class='demo-app-sidebar-section'>
+
+            <div class="my-3">
+                <button type="button" class="btn btn-primary bi bi-plus-circle align-left ">Add</button>
+            </div>
+
+            <div class='demo-app-main'>
+                <full-calendar id='calendar' #calendar [options]='calendarOptions' (eventClick)="handleEventClick($event)" (dateClick)="handleDateClick($event)">
+                </full-calendar>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Users</title>
+</head>
+
+<body>
+    <div class="mt-5">
+        <h1 class="text-center">View patients</h1>
+        <div class="container">
+            <!--Add User Button-->
+            <div class="my-3">
+                <button (click)="openDialog('1000ms','500ms')" type="button" class="btn btn-primary bi bi-plus-circle">Add patient</button>
+            </div>
+            <table class="table border">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">FirstName</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">phone Number</th>
+                        <th scope="col">birthday date</th>
+                        <th scope="col">Update</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let patient of patients">
+                        <td>{{patient.p_kyPatient}}</td>
+                        <td>{{patient.p_Adress}}</td>
+                        <td>{{patient.p_FirstName}}</td>
+                        <td>{{patient.p_Name}}</td>
+                        <td>{{patient.p_Tel}}</td>
+                        <td>{{patient.p_birthDate}}</td>
+                        <td>
+                            <div class="d-inline mx-2">
+                                <button class="btn bi bi-pen" (click)="openDialogUpdate('1000ms','500ms',patient.p_kyPatient)" type="button">Update</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-inline1">
+                                <button class="btn btn-danger bi bi-trash3" (click)="DeletePatient(patient.p_kyPatient)" type="button">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
+<router-outlet></router-outlet>

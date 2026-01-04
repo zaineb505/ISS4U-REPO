@@ -1,0 +1,89 @@
+<mat-tab-group #tabGroup>
+    <mat-tab label="Information">
+        <form [formGroup]="Reactiveform" (ngSubmit)="onSubmit()">
+            <div mat-dialog-content>
+                <mat-form-field>
+                    <mat-label>exam</mat-label>
+                    <input placeholder="Nom de l'examen" matInput formControlName="medExam_Name" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Note</mat-label>
+                    <input placeholder="Note" matInput formControlName="medExam_Note" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Begin</mat-label>
+                    <input type="datetime-local" placeholder="Date et heure de début" matInput formControlName="medExam_TimeStampBegin" [value]="selectedDate" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>End</mat-label>
+                    <input type="datetime-local" placeholder="Date et heure de fin" matInput formControlName="medExam_TimeStampEnd" [value]="selectedDate" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Patient</mat-label>
+                    <mat-select formControlName="MedExam_Pk" required>
+                        <mat-option *ngFor="let patient of patients" [value]="patient.p_kyPatient">{{patient.p_Name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Service</mat-label>
+                    <mat-select formControlName="MedExam_Srvc" required>
+                        <mat-option *ngFor="let service of services" [value]="service.service_Ky">{{service.service_Name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div mat-dialog-actions>
+                <button type="submit" mat-raised-button color="primary" cdkFocusInitial>Next</button>
+                <button type="button" mat-raised-button color="warn" mat-dialog-close (click)="onCancel()">Cancel</button>
+            </div>
+        </form>
+    </mat-tab>
+    <mat-tab label="Process" [disabled]="disableProcessTab">
+        <div>
+            <router-outlet></router-outlet>
+            <div mat-dialog-actions>
+                <button type="submit" mat-raised-button color="primary" (click)="navigateToDetails()" cdkFocusInitial>Submit</button>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Details">
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Medical Step</th>
+                        <th>Medical Personal</th>
+                        <th>Room</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>reception du patient</td>
+                        <td>sec.Sami Jlassi</td>
+                        <td>salle recep01</td>
+                    </tr>
+                    <tr>
+                        <td>prise en charge </td>
+                        <td>inf.Asma Ayari </td>
+                        <td>salle de preparation 02</td>
+                    </tr>
+                    <tr>
+                        <td>examen</td>
+                        <td>Dr.Ossema Dammak</td>
+                        <td>salle irm03</td>
+                    </tr>
+                    <tr>
+                        <td>analyse d'image </td>
+                        <td>tech.Tawfik Afli </td>
+                        <td>salle irm03</td>
+                    </tr>
+                    <tr>
+                        <td>facturation</td>
+                        <td>Amira Slimeni </td>
+                        <td>salle recep01</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </mat-tab>
+</mat-tab-group>

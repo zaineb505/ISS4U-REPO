@@ -1,0 +1,18 @@
+#calendar {
+    width: 1060px;
+    margin: auto;
+    height: 580px;
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.mt-5 {
+    height: 200px;
+    left: auto;
+    padding: 60px;
+}
+
+.align-left {
+    float: left;
+}
