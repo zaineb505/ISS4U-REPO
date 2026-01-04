@@ -32,6 +32,7 @@ L’interface utilisateur est intuitive et réactive, permettant aux patients de
 
 ---
 ## Schéma explicatif du Système
+
 <img width="658" height="312" alt="Capture d&#39;écran 2026-01-04 171042" src="https://github.com/user-attachments/assets/0a2fd96e-4138-4133-8266-f4c2af91de97" />
 ## Réalisation
 <img width="1344" height="642" alt="add-patient" src="https://github.com/user-attachments/assets/896605eb-283f-4301-9528-4cffd7c8e003" />
